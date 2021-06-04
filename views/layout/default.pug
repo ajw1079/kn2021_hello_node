@@ -1,0 +1,17 @@
+doctype html 
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Default PUG
+        include ../inc/css-link.pug
+        include ../inc/js-link.pug
+    body
+        include ../inc/header.pug
+        .container(style="padding-top: 80px;")
+            .jumbotron 
+                block titleBar 
+                //- 생성자의 데이터 값을 뿌려줄수 있는 영역
+            .cont-wrap 
+                block contents 
+                //- 생성자의 데이터 값을 뿌려줄수 있는 영역

@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title 회원가입 with MYSQL
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+body
+    .wrapper.container
+        .jumbotron
+            h1
+                | 회원가입 
+                small - Express와 연동한 회원가입 테스트
+        //- <form action="/user/save" method="get">
+        form(action="/user/save" method="post")
+            .form-inline
+                input.form-control.mr-3(type="text" name="userid" placeholder="아이디")
+
+                input.form-control.mr-3(type="password" name="userpw" placeholder="패스워드")
+                
+                input.form-control.mr-3(type="text" name="username" placeholder="이름")
+                
+                input.form-control.mr-3(type="text" name="email" placeholder="이메일")
+                button.btn.btn-primary 전송

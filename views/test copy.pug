@@ -1,0 +1,25 @@
+doctype html 
+html(lang="ko") 
+    head 
+        title Test PUG
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
+        link(rel="stylesheet" href="/css/common.css")
+        link(rel="stylesheet" href="/css/index.css")
+    body
+        header.header.d-flex.justify-content-between.align-items-center.bg-dark.px-3.position-fixed.w-100(style="height:60px;")
+            .logo 
+                a.text-light(href="/index") LOGO
+            .navi-wrap.d-flex
+                a.text-light.p-3(href="/index") HOME 
+                a.text-light.p-3(href="/about") ABOUT 
+                a.text-light.p-3(href="/pf") PORTFOLIO 
+                a.text-light.p-3(href="/join") JOIN 
+        .container 
+            .jumbotron 
+                
+                block titleBar   
+                //-h1 Index 페이지 타이틀
+            .cont-wrap 
+                block contents   
+                //-h3 Index 페이지 내용3
+                
